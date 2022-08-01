@@ -20,9 +20,10 @@ public:
                 break;
             }
         }
-        int temp=nums[a];
-        nums[a]=nums[b];
-        nums[b]=temp;
+            swap(nums[a],nums[b]);
+        // int temp=nums[a];
+        // nums[a]=nums[b];
+        // nums[b]=temp;
         }
         reverse(nums.begin()+a+1,nums.end());
     }
