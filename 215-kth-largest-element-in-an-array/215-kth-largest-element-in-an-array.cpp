@@ -13,10 +13,6 @@ public:
         cout<<it->first<<" "<<it->second<<endl;
     }
     it=m.end();
-    // if(k>nums.size())
-    // {
-    //     it--;
-    // }
     if(k<=nums.size())
     {
         while(k>0)
