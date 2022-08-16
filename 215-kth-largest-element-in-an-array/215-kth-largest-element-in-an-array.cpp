@@ -8,25 +8,13 @@ public:
     }
 
     map<int,int> ::iterator it;
-
-
-
-    // for(it=m.begin();it!=m.end();it++)
-    // {
-    //     cout<<it->first<<" "<<it->second<<endl;
-    // }
     it=m.end();
-    if(k>nums.size())
-    {
-        it--;
-    }
-    else
+    if(k<=nums.size())
     {
         while(k>0)
         {
             it--;
             k-=it->second;
-            //cout<<k<<" ";
         }
     }
     return it->first;
