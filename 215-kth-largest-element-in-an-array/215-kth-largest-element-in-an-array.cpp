@@ -6,16 +6,12 @@ public:
     {
         m[nums[i]]++;
     }
-
     map<int,int> ::iterator it;
     it=m.end();
-    if(k<=nums.size())
+    while(k>0 && k<=nums.size())
     {
-        while(k>0)
-        {
-            it--;
-            k-=it->second;
-        }
+        it--;
+        k-=it->second;
     }
     return it->first;
 
