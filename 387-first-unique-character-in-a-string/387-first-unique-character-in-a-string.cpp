@@ -1,7 +1,7 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
-        int idx[30]={0};
+        vector <int> idx(26,0);
         for(int i=0;i<s.size();i++)
         {
             idx[s[i]-'a']++;
