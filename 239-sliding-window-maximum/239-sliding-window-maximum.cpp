@@ -15,7 +15,7 @@ public:
         ans.push_back(nums[d.front()]);
         for(int i=k;i<nums.size();i++)
         {
-            while(d.size()>0 && (i-d.front())>=k)
+            if(d.size()>0 && (i-d.front())>=k)
             {
                 d.pop_front();
             }
