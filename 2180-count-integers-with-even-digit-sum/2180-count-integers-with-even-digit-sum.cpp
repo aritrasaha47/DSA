@@ -1,26 +1,20 @@
 class Solution {
 public:
     int countEven(int num) {
-        
-        int count = 0;
-        int r;
-        for( int i=1; i<=num; ++i )
+        int count=0,r;
+        for(int j=1;j<=num;j++)
         {
-            int k=i;
+            int i=j;
             int sum=0;
-            while( k != 0 )
+            while(i)
             {
-                r = k % 10;
-                sum = sum + r;
-                k = k/10;
+                r=i%10;
+                sum+=r;
+                i/=10;
             }
-            if(sum%2==0){
+            if(sum%2==0)
                 count++;
-            }
-            
         }
-        
-        
         return count;
     }
 };
