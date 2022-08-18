@@ -7,7 +7,7 @@ public:
             int mid=(l+h)/2;
             if(nums[mid]==target)
                 return mid;
-            if(nums[l]<=nums[mid])
+            else if(nums[l]<=nums[mid])
             {
                 //First part sorted
                 if(target>=nums[l] && target<nums[mid])
