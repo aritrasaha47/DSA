@@ -19,7 +19,7 @@ public:
                     l=mid+1;
                 }
             }
-            else
+            else if(nums[h] >= nums[mid])
             {
                 //Second part sorted
                 if(target>nums[mid] && target<=nums[h])
